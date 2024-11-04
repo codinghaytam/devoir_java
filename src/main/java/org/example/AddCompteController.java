@@ -1,28 +1,27 @@
 package org.example;
 
 import javafx.fxml.FXML;
+import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 public class AddCompteController {
 
     @FXML
     private TextField nomField;
-    @FXML
-    private TextField dateCreationField;
-    @FXML
-    private TextField dateUpdateField;
+
     @FXML
     private TextField deviseField;
 
     @FXML
     public void handleSubmitCompte() {
         String nom = nomField.getText();
-        Date dateCreation = new Date(); // You might want to parse this from the input
-        Date dateUpdate = new Date(); // You might want to parse this from the input
+        Date dateCreation = new Date();
+        Date dateUpdate = new Date();
         int devise = Integer.parseInt(deviseField.getText());
 
         Compte compte = new Compte(nom, dateCreation, dateUpdate, devise);

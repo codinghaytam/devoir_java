@@ -13,8 +13,6 @@
     <VBox xmlns:fx="http://javafx.com/fxml" spacing="10">
         <Label text="Add Compte" />
         <TextField fx:id="nomField" promptText="Enter Account Name" />
-        <TextField fx:id="dateCreationField" promptText="Enter Creation Date" />
-        <TextField fx:id="dateUpdateField" promptText="Enter Update Date" />
         <TextField fx:id="deviseField" promptText="Enter Currency" />
         <Button text="Submit" onAction="#handleSubmitCompte" />
         <Button text="Cancel" onAction="#handleCancel" />
